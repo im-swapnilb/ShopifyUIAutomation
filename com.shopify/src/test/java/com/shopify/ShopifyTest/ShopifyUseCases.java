@@ -12,7 +12,7 @@ import jxl.read.biff.BiffException;
 public class ShopifyUseCases extends ShopifyTestBase {
 	LoginPage loginPage;
 	Logout logoutPage;
-	@Test(dataProvider= "flipcart")
+	@Test(dataProvider= "shopify")
 	
 	 public void Testcase(String TestCaseName,String UserName,String Password, String Browser,String Url,String Results) throws Exception{
 		fn_LaunchBrowser(TestCaseName,Browser,Url);
@@ -28,10 +28,10 @@ public class ShopifyUseCases extends ShopifyTestBase {
 		// driver.quit();
 	}
 	
-	@DataProvider(name="flipcart")
+	@DataProvider(name="shopify")
     public static Object[][] loginData() throws BiffException{
      
-     Object[][] arrayObject=getExcelData("FlipExcel", "FlipSheet");
+     Object[][] arrayObject=getExcelData("shopify", "shopify");
      return arrayObject;
      }	
 
