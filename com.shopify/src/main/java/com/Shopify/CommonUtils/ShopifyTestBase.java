@@ -46,14 +46,14 @@ public class ShopifyTestBase {
 	public static WebDriver fn_LaunchBrowser(String TestCaseName,String Browser,String URL) throws Exception{
 		try { 
 		if(Browser.equalsIgnoreCase("CH")){
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\swapnilband\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/com.shopify/src/main/resources/com/Shopify/Driver/chromedriver.exe");
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 	else if(Browser.equalsIgnoreCase("FF")){
-		System.setProperty("webdriver.gecko.driver", "C:\\Users\\swapnilband\\driver\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "/com.shopify/src/main/resources/com/Shopify/Driver/chromedriver.exe");
 		driver= new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
