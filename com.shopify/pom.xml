@@ -1,0 +1,133 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.shopify</groupId>
+  <artifactId>com.shopify</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Shopify UI</name>
+  <description>Shopify UI Automation Using TestNG and Maven</description>
+  
+  <!-- Add Following Lines in Your POM File -->
+ <properties>
+  <selenium.version>2.53.1</selenium.version>
+  <testng.version>6.9.10</testng.version>
+ </properties>
+
+ <dependencies>
+  <dependency>
+   <groupId>org.seleniumhq.selenium</groupId>
+   <artifactId>selenium-java</artifactId>
+   <version>${selenium.version}</version>
+  </dependency>
+<dependency>
+  <groupId>org.testng</groupId>
+  <artifactId>testng</artifactId>
+  <version>6.10</version>
+  <scope>test</scope>
+</dependency>
+
+<dependency>
+    <groupId>com.relevantcodes</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>2.41.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-core -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-core</artifactId>
+    <version>1.2.2</version>
+</dependency>
+
+  
+  <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.13.0</version>
+</dependency>
+
+<dependency>
+
+            <groupId>org.uncommons</groupId>
+
+            <artifactId>reportng</artifactId>
+
+            <version>1.1.4</version>
+
+            <scope>test</scope>
+
+            <exclusions>
+
+                <exclusion>
+
+                    <groupId>org.testng</groupId>
+
+                    <artifactId>testng</artifactId>
+
+                </exclusion>
+
+            </exclusions>
+
+</dependency>
+
+<dependency>
+
+            <groupId>com.google.inject</groupId>
+
+            <artifactId>guice</artifactId>
+
+            <version>3.0</version> 
+ 
+</dependency>  
+
+
+<dependency>
+    <groupId>net.sourceforge.jexcelapi</groupId>
+    <artifactId>jxl</artifactId>
+    <version>2.6.12</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>3.17</version>
+</dependency>
+
+  
+  <dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
+</dependency>
+
+
+
+  
+  <dependency>
+    <groupId>com.atomicleopard</groupId>
+    <artifactId>webelemental</artifactId>
+    <version>0.0.1</version>
+</dependency>
+
+ <!-- Java Mail API -->
+    <dependency>
+	    <groupId>javax.mail</groupId>
+	    <artifactId>mail</artifactId>
+	    <version>1.4.3</version>
+    </dependency>
+    
+    <!-- Spring framework -->
+    <dependency>
+     	<groupId>org.springframework</groupId>
+	    <artifactId>spring</artifactId>
+	    <version>2.5.6</version>
+    </dependency>
+
+<dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
+</dependency>
+
+ </dependencies>
+  
+</project>
