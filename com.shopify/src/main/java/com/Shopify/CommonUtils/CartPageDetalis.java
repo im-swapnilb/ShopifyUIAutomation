@@ -50,11 +50,13 @@ public class CartPageDetalis {
 	}
 
 	public Double getDiscount_amt() {
-		num_discount_amt = PriceParserTest.priceParser(discount_amt);
+		System.out.println(discount_amt);
+		num_discount_amt = PriceParserTest.priceParserDiscount(discount_amt);
 		return num_discount_amt;
 	}
 
 	public void setDiscount_amt(String discount_amt) {
+		System.out.println(discount_amt);
 		this.discount_amt = discount_amt;
 	}
 

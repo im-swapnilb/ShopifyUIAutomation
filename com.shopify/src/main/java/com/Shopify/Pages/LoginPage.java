@@ -1,10 +1,14 @@
 package com.Shopify.Pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.Shopify.CommonUtils.ShopifyTestBase;
 import com.Shopify.Reports.Log;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
 
 public class LoginPage extends ShopifyTestBase {
 
@@ -25,15 +29,22 @@ public class LoginPage extends ShopifyTestBase {
 	}
 
 	 @Test
-	public void flipLogin(String username , String password, String TestCaseName) throws Exception{
-		user_Name.click();
-		user_Name.sendKeys(username);
-		Log.info("Username is entered for test case " + TestCaseName);
-		user_password.click();
-		user_password.sendKeys(password);
-		Log.info("Password is entered for test case " + TestCaseName);
-		submit.click();
-		assertElement(my_Account, TestCaseName);
-		Log.info("User is logged in for testcase " +TestCaseName);
+	public void flipLogin() throws Exception{
+		 System.out.println("HI you are in login page");
+//			System.setProperty("webdriver.chrome.driver", "/Shopify/com.shopify/src/main/resources/com/Shopify/Driver/chromedriver.exe");
+//		WebDriver driver= new ChromeDriver();
+	//	 driver.get("https://www.google.com/");
+		 Thread.sleep(5000);  // Let the user actually see something!
+	//	    driver.quit();
+		 //String username , String password, String TestCaseName
+//		user_Name.click();
+//		user_Name.sendKeys(username);
+//		Log.info("Username is entered for test case " + TestCaseName);
+//		user_password.click();
+//		user_password.sendKeys(password);
+//		Log.info("Password is entered for test case " + TestCaseName);
+//		submit.click();
+//		assertElement(my_Account, TestCaseName);
+//		Log.info("User is logged in for testcase " +TestCaseName);
 	}
 }

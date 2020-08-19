@@ -36,7 +36,7 @@ public class BulkTest {
 	@Test
 	public void testBulk() throws Exception {
 		Obj = ObjectRepo.getInstance();
-		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/Shopify/com.shopify/src/main/resources/com/Shopify/Driver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get(Obj.getProperty("base_url"));
 		driver.manage().window().maximize();

@@ -40,13 +40,13 @@ public class ShopifyTestBase {
 	public static int totalNoofRows;
 	public static String status ;
 	public static WebDriver driver;
-	@Test(dataProvider= "shopify")
+	@Test //(dataProvider= "shopify")
 	
 	
 	public static WebDriver fn_LaunchBrowser(String TestCaseName,String Browser,String URL) throws Exception{
 		try { 
 		if(Browser.equalsIgnoreCase("CH")){
-		System.setProperty("webdriver.chrome.driver", "/com.shopify/src/main/resources/com/Shopify/Driver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/Shopify/com.shopify/src/main/resources/com/Shopify/Driver/chromedriver.exe");
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -62,11 +62,11 @@ public class ShopifyTestBase {
 	 	  driver.navigate().to(URL);
 	 	  
 	  } catch (Exception e) { 
-		  Log.error("URL is not valid for " + TestCaseName);
+		//  Log.error("URL is not valid for " + TestCaseName);
 		  driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	       System.out.println("FAILURE: URL did not load: " + URL); 
 	       status = "Failed";
-	       takeScreenshot(TestCaseName);
+	 //      takeScreenshot(TestCaseName);
 	       Assert.fail();
 	       throw new Exception("URL did not load");  
 	       

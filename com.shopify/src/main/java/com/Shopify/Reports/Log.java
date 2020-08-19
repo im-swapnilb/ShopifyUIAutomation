@@ -1,5 +1,6 @@
 package com.Shopify.Reports;
 
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import org.apache.log4j.Logger;
@@ -15,11 +16,11 @@ static {
 	DOMConfigurator.configure("log4j.xml");
 	}
 
- /*public void configLogger()
+ public void configLogger()
     {
         URL u = getClass().getClassLoader().getResource("//Demo//log4j.xml");
         DOMConfigurator.configure(u);
-    }*/
+    }
 
 //This is to print log for the Start of the test case		
 	public static void startTestCase(String sTestCaseName){

@@ -21,7 +21,7 @@ public class SampleTest {
 
 	@BeforeTest
 	public void beforeTest() throws InterruptedException, IOException {
-		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/Shopify/com.shopify/src/main/resources/com/Shopify/Driver/chromedriver.exe");
 		driver = new ChromeDriver();
 		Obj = new Properties();
 		FileInputStream objfile = new FileInputStream(new File(".//application.properties"));
